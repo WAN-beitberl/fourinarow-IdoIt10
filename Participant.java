@@ -1,4 +1,4 @@
-package Four_in_a_row;
+package somethingInASomething1;
 
 public class Participant{
     private String name;

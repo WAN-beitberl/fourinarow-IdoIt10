@@ -1,4 +1,4 @@
-package Four_in_a_row;
+package somethingInASomething1;
 
 public class Board{
     private int numOfRows;
@@ -6,6 +6,8 @@ public class Board{
     private char[][] arr;
 	
 	public Board(int numOfRows, int numOfCols){
+		this.numOfRows = numOfRows;
+		this.numOfCols = numOfCols;
 		this.arr = new char[numOfRows][numOfCols];
 	}
 	
@@ -26,6 +28,10 @@ public class Board{
 		return this.numOfCols;
 	}
 	
+	public char[][] GetBoard(){
+		return this.arr;
+	}
+	
 	public int valInPLace(int row, int col){
 		return arr[row][col];
 	}
@@ -33,4 +39,8 @@ public class Board{
 	public void putInPLace(int row, int col, char val){
 		arr[row][col] = val;
 	}
+	
+	System.out.println("Enter size for sequence");
+		Scanner console = new Scanner(System.in);  
+		this.sequence = console.nextInt();
 }
