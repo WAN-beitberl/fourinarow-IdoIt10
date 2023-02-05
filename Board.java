@@ -39,8 +39,4 @@ public class Board{
     public void putInPLace(int row, int col, char val){
         arr[row][col] = val;
     }
-    
-    System.out.println("Enter size for sequence");
-        Scanner console = new Scanner(System.in);  
-        this.sequence = console.nextInt();
 }
